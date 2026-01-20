@@ -111,3 +111,19 @@ php artisan serve
 ```
 
 
+## Testing
+
+A Postman collection is included to demonstrate the API usage and authentication flow.
+
+The collection can be found in the following directory:
+
+```bash
+/postman
+```
+
+Steps:
+
+- Import the collection into Postman
+- Call the login request to obtain an access token
+- Use the token in the Authorization header for protected endpoints
+
