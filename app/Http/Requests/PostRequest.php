@@ -22,7 +22,7 @@ class PostRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'name' => [
+            'title' => [
                 'required',
                 'string',
                 'regex:/^[\p{Arabic}\s]+$/u'
@@ -34,8 +34,8 @@ class PostRequest extends FormRequest
     public function messages(): array
     {
         return [
-            'name.required' => 'Name is required.',
-            'name.regex' => 'Name must contain Arabic characters only.',
+            'title.required' => 'Title is required.',
+            'title.regex' => 'Title must contain Arabic characters only.',
         ];
     }
 }
