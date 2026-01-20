@@ -1,7 +1,7 @@
 <?php
 namespace App\Services;
 use App\Models\Post;
-class PostRepository
+class PostRepository implements PostRepositoryInterface
 {
     public function all()
     {

@@ -11,7 +11,6 @@ use Illuminate\Support\Facades\Response;
 class AuthController extends Controller
 {
     public function login(LoginRequest $request){
-        dd(5);
         $credentials = $request->validated();
 
         $user = User::where('email', $credentials['email'])->first();
